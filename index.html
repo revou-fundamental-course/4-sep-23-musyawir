@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CalTic</title>
+</head>
+<body>
+    <br><br><br>
+    <div class="container">
+        <h1>CalTic</h1>
+        <h2>Calculator Matematic</h2>
+        <form id="shape-form">
+            <label for="shape">Pilih Bentuk:</label>
+            <select id="shape" required>
+                <option value="square">Persegi</option>
+                <option value="rectangle">Persegi Panjang</option>
+                <option value="circle">Lingkaran</option>
+            </select>
+            <div id="square-fields">
+                <div class="card">
+                    <img src="css/persegi.png" alt="Persegi">
+                </div>
+                <label for="sideLength">Panjang Sisi:</label>
+                <input type="number" id="sideLength">
+            </div>
+            <div id="rectangle-fields">
+                <div class="card">
+                    <img src="css/persegi_panjang.png" alt="Persegi Panjang">
+                </div>
+                <label for="length">Panjang:</label>
+                <input type="number" id="length">
+                <label for="width">Lebar:</label>
+                <input type="number" id="width">
+            </div>
+            <div id="circle-fields">
+                <div class="card">
+                    <img src="css/lingkaran.jpeg" alt="Lingkaran">
+                </div>
+                <label for="radius">Jari-Jari:</label>
+                <input type="number" id="radius">
+            </div>
+            <button type="submit" id="calculateBtn">Hitung</button>
+        </form>
+        <div id="result">
+            <p id="areaResult"></p>
+            <p id="perimeterResult"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
